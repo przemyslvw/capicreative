@@ -1,0 +1,7 @@
+<div class="upload-container">
+    <h2>Upload Photo</h2>
+    <input type="file" (change)="onFileSelected($event)">
+    <button (click)="uploadPhoto()" [disabled]="uploadProgress">Upload</button>
+    <p *ngIf="uploadMessage">{{ uploadMessage }}</p>
+  </div>
+  
